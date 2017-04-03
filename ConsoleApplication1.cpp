@@ -1,20 +1,20 @@
 #include "stdafx.h"
 #include <iostream>
 #include<conio.h>
-#include<cstdlib>
-#include<ctime>
+
 using namespace std;
 
+int volume(int l=7, int w=5, int h=40);
 
-int main()
-{
-	srand(time(0));
+int main(){	
 	
-	for (int a = 1; a <= 25; a++) {
-
-		cout << 1 + (rand() % 6) << endl;
+	cout << volume(2);
+	getch();
 
 	}
 
-	getch();
+int volume(int l, int w, int h) {
+	return l*h*w;
+
 }
+
